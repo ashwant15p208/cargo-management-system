@@ -1,2 +1,2 @@
 # cargo-management-system
-#java hibernate and servlet
+Project using java hibernate and servlet
