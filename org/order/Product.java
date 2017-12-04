@@ -8,59 +8,41 @@ import javax.persistence.Table;
 public class Product {
 	@Id
 	@GeneratedValue
-	private String ProdId;
+	private int ProdId;
 	private String ProdName;
 	private String ProdPrice;
+	private String ProdDesc;
 	private String ProdSeller;
-	private String ProdAddress;
-	private String ProdDescription;
-
-	public String getProdId() {
-		return ProdId;
+	
+	public String getProdDesc() {
+		return ProdDesc;
 	}
-
-	public String getProdName() {
-		return ProdName;
+	public void setProdDesc(String prodDesc) {
+		ProdDesc = prodDesc;
 	}
-
-	public String getProdPrice() {
-		return ProdPrice;
-	}
-
 	public String getProdSeller() {
 		return ProdSeller;
 	}
-
-	public String getProdAddress() {
-		return ProdAddress;
-	}
-
-	public String getProdDescription() {
-		return ProdDescription;
-	}
-
-	public void setProdId(String prodId) {
-		ProdId = prodId;
-	}
-
-	public void setProdName(String prodName) {
-		ProdName = prodName;
-	}
-
-	public void setProdPrice(String prodPrice) {
-		ProdPrice = prodPrice;
-	}
-
 	public void setProdSeller(String prodSeller) {
 		ProdSeller = prodSeller;
 	}
-
-	public void setProdAddress(String prodAddress) {
-		ProdAddress = prodAddress;
+	public int getProdId() {
+		return ProdId;
 	}
-
-	public void setProdDescription(String prodDescription) {
-		ProdDescription = prodDescription;
+	public void setProdId(int prodId) {
+		ProdId = prodId;
+	}
+	public String getProdName() {
+		return ProdName;
+	}
+	public void setProdName(String prodName) {
+		ProdName = prodName;
+	}
+	public String getProdPrice() {
+		return ProdPrice;
+	}
+	public void setProdPrice(String prodPrice) {
+		ProdPrice = prodPrice;
 	}
 
 }
