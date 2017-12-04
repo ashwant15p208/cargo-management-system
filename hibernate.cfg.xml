@@ -36,10 +36,8 @@
 
         <!-- Names the annotated entity class -->
         
-        <mapping class="qwe.Authentication"/>
-        <mapping class="qwe.Operations"/>
-      	<mapping class="qwe.User"/>
-      	<mapping class="qwe.Item"/>
+        <mapping class="org.order.Product"/>
+        
       
         
 
